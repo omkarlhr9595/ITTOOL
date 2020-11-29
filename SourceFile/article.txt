@@ -1,0 +1,12 @@
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;article&gt;
+      &lt;h1 style="color: green"&gt;Result Declaration.&lt;/h1&gt;
+      &lt;p&gt;Results will be declared by 30th Octomber.&lt;/p&gt;
+    &lt;/article&gt;
+  &lt;/body&gt;
+&lt;/html&gt;

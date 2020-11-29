@@ -1,0 +1,12 @@
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+      This is B.Sc. I.T. Second year class. It is &lt;del&gt;Online&lt;/del&gt; Regular
+      class.
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;

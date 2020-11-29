@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/styles/vs2015.min.css"
+    />
+    <link rel="stylesheet" href="style2.css">
+    <title>IT Tools</title>
+  </head>
+  <body>
+    <header>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">IT TOOLS</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME </a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="syllabus.html">SYLLABUS</a>
+            </li>
+            <li class="nav-item dropdown  active">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                TOPICS
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="new.html">New Tags in Html5</a>
+                <a class="dropdown-item" href="#">Drag & Drop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">LINK</a>
+              </li>
+          </ul>
+          </form>
+        </div>
+      </nav>
+    </div> 
+  </header>
+  <div class="container">
+      <h1>HTML Drag and Drop API</h1>
+    <p>In HTML, any element can be dragged and dropped.</p>
+    <iframe src="./Drag & Drop/e1.html" frameborder="1" width="100%" height="195px"></iframe>
+    <h2>Drag and Drop</h2>
+
+<p>Drag and drop is a very common feature. It is when you "grab" an object and drag it to a different location.</p><hr>
+<h2>HTML Drag and Drop Example</h2>
+
+<p>The example below is a simple drag and drop example:</p>
+<pre class="language-html"><code id="myInput" class="c">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;style&gt;
+      #div1 {
+        width: 280px;
+        height: 70px;
+        padding: 10px;
+        border: 1px solid #aaaaaa;
+        background-color: white;
+      }
+    &lt;/style&gt;
+    &lt;script&gt;
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+
+      function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+      }
+
+      function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+      }
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Drag the Google image into the rectangle:&lt;/p&gt;
+
+    &lt;div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"&gt;&lt;/div&gt;
+    &lt;br /&gt;
+    &lt;img
+      id="drag1"
+      src="img_logo.gif"
+      draggable="true"
+      ondragstart="drag(event)"
+      width="280"
+      height="69"
+    /&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<h2>Output of above program</h2>
+<iframe class="v" src="./Drag & Drop/e2.html" frameborder="1" width="100%" height="250px"></iframe>
+<hr>
+<p>It might seem complicated, but lets go through all the different parts of a drag and drop event.</p>
+<hr>
+<h2>Make an Element Draggable</h2>
+<p>First of all: To make an element draggable, set the <code>&lt;draggable&gt;</code> attribute to true:</p>
+<pre class="language-html"><code id="myInput" class="c">&lt;img draggable="true"&gt;</code></pre>
+<hr>
+<h2>What to Drag - ondragstart and setData()</h2>
+<p>Then, specify what should happen when the element is dragged.<br/>
+
+  In the example above, the <code>ondragstart</code> attribute calls a function, drag(event), that specifies what data to be dragged.<br/>
+  
+  The <code>dataTransfer.setData()</code> method sets the data type and the value of the dragged data:</p>
+  <pre class="language-javascript"><code id="myInput" class="c">function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+  } </code></pre>
+<p>In this case, the data type is "text" and the value is the id of the draggable element ("drag1").</p>
+<hr>
+<h2>Where to Drop - ondragover</h2>
+<p>The <code>ondragover</code> event specifies where the dragged data can be dropped.
+
+  By default, data/elements cannot be dropped in other elements. To allow a drop, we must prevent the default handling of the element.
+  
+  This is done by calling the <code>event.preventDefault()</code> method for the ondragover event:</p>
+  <pre class="language-typescript"><code id="myInput" class="c">event.preventDefault()</code></pre>
+<hr>
+<h2>Do the Drop - ondrop</h2>
+<p>When the dragged data is dropped, a drop event occurs.
+
+  In the example above, the ondrop attribute calls a function, drop(event):</p>
+  <pre class="language-typescript"><code id="myInput" class="c">function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+  }</code></pre>
+<p>Code explained:
+  <ul>
+  <li>Call preventDefault() to prevent the browser default handling of the data (default is open as link on drop).</li>
+  <li>Get the dragged data with the dataTransfer.getData() method. This method will return any data that was set to the same type in the setData() method.</li>
+  <li>The dragged data is the id of the dragged element ("drag1").</li>
+  <li>Append the dragged element into the drop element.</li>
+</ul>
+</p>
+
+  </div>
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
+
+    <footer class="container">
+      <p class="float-right"></p>
+      <p>© IT TOOLS</p>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/highlight.min.js"
+    ></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+      </script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  //Add Scroll back-to-top button in jQuery
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('#scroll').fadeIn();
+      } else {
+        $('#scroll').fadeOut();
+      }
+    });
+    $('#scroll').click(function () {
+      $("html, body").animate({
+        scrollTop: 0
+      }, 1800);
+      return false;
+    });
+
+    function disableScrolling() {
+        console.log("Disable scrolling");
+        let x = window.scrollX;
+        let y = window.scrollY;
+        window.onscroll = function () {
+          window.scrollTo(x, y);
+        };
+      }
+
+      function enableScrolling() {
+        console.log("Enable scrolling");
+        window.onscroll = function () {};
+      }
+
+      //  Add copy button
+      let pres = document.getElementsByTagName("pre");
+      Array.from(pres).forEach((element2) => {
+        let element = document.createElement("button");
+        element.style.fontFamily = "Nunito, sans-serif";
+        element.setAttribute("class", "btn btn-dark my-2");
+        element.innerHTML = "Copy To Clipboard";
+        element.style.float = "top";
+
+        element.addEventListener("click", (e) => {
+          e.preventDefault();
+          disableScrolling();
+          console.log(e);
+          let x = window.screenX;
+          let y = window.screenY;
+
+          element.innerHTML = "Copied!";
+          let tarea = document.createElement("textarea");
+          tarea.innerHTML = element.parentElement.children[1].innerText;
+          document.body.append(tarea);
+          tarea.focus();
+          tarea.select();
+          document.execCommand("copy");
+          tarea.style.display = "none";
+          setTimeout(() => {
+            element.innerHTML = "Copy To Clipboard";
+          }, 2000);
+          setTimeout(() => {
+            enableScrolling();
+          }, 20);
+        });
+        element2.insertBefore(element, element2.children[0]);
+      });
+
+  });
+</script>
+
+    <script>
+      
+    </script>
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

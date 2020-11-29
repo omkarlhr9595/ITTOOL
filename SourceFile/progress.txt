@@ -1,0 +1,10 @@
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;label&gt;Downloading Progress&lt;/label&gt;&lt;br /&gt;&lt;br /&gt;
+    &lt;progress value="20" max="100"&gt;&lt;/progress&gt;
+  &lt;/body&gt;
+&lt;/html&gt;

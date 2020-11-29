@@ -1,0 +1,10 @@
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;img src="google.jpg" height="270px" width="400px" /&gt;
+    &lt;figcaption style="color: orange"&gt;Google Classroom Icon&lt;/figcaption&gt;
+  &lt;/body&gt;
+&lt;/html&gt;

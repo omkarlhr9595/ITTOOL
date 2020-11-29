@@ -1,0 +1,12 @@
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;base href="https://www.google.com" target="_black" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;center&gt;
+      &lt;a href="Yahoo"&gt;Click Me&lt;/a&gt;
+    &lt;/center&gt;
+  &lt;/body&gt;
+&lt;/html&gt;

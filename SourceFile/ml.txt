@@ -1,0 +1,12 @@
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;center&gt;
+      &lt;label for="disk_c"&gt;Disk Usage C:&lt;/label&gt;
+      &lt;meter id="disk_c" min="0" max="20" value="18"&gt;18GB out of 20GB&lt;/meter&gt;
+    &lt;/center&gt;
+  &lt;/body&gt;
+&lt;/html&gt;

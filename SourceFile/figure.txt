@@ -1,0 +1,12 @@
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;figure style="border: solid; width: 400px"&gt;
+      &lt;img src="google.jpg" height="270px" width="400px" alt="Image" /&gt;
+      &lt;figcaption&gt;Google&lt;/figcaption&gt;
+    &lt;/figure&gt;
+  &lt;/body&gt;
+&lt;/html&gt;

@@ -1,0 +1,11 @@
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;video height="600px" width="900px" controls&gt;
+      &lt;source src="movie.mp4" type="video/mp4" /&gt;
+    &lt;/video&gt;
+  &lt;/body&gt;
+&lt;/html&gt;

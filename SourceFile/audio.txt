@@ -1,0 +1,11 @@
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;audio controls&gt;
+      &lt;source src="song.mp3" type="audio/mp3" /&gt;
+    &lt;/audio&gt;
+  &lt;/body&gt;
+&lt;/html&gt;

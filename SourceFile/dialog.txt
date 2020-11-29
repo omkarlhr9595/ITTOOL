@@ -1,0 +1,11 @@
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h3&gt;This is online class&lt;/h3&gt;
+    &lt;p&gt;E-Learning&lt;/p&gt;
+    &lt;dialog open&gt;E-Learning&lt;/dialog&gt;
+  &lt;/body&gt;
+&lt;/html&gt;

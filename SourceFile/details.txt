@@ -1,0 +1,14 @@
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;details&gt;
+      &lt;summary&gt;B.Sc. I.T.&lt;/summary&gt;
+      &lt;p&gt;Android&lt;/p&gt;
+      &lt;p&gt;IT Tools&lt;/p&gt;
+      &lt;p&gt;D.B.M.S.&lt;/p&gt;
+    &lt;/details&gt;
+  &lt;/body&gt;
+&lt;/html&gt;

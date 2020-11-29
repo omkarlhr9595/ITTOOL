@@ -1,0 +1,13 @@
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;form oninput="res.value=parseInt(a.value)+parseInt(b.value);"&gt;
+      &lt;input type="text" name="a" value="" required /&gt;&lt;br /&gt;&lt;br /&gt;
+      &lt;input type="text" name="b" value="" required /&gt;&lt;br /&gt;&lt;br /&gt;
+      Addition = &lt;output name="res"&gt;&lt;/output&gt;
+    &lt;/form&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
