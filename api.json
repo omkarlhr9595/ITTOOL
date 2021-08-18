@@ -1,18 +1,16 @@
-[
-  {
-    "name": "Dishant Aarak",
-    "city": "London"
-  },
-  {
-    "name": "Anurag Dandge",
-    "city": "Madrid"
-  },
-  {
-    "name": "Omkar Lohar",
-    "city": "Paris"
-  },
-  {
-    "name": "Rosa Park",
-    "city": "Alabama"
-  }
-]
+{
+    "api":[
+        {
+            "name":"Dishant",
+            "city":"Power House Aurangabad"
+        },
+        {
+          "name": "Anurag",
+          "city": "Pundlik Nagar Aurangabad"
+        },
+        {
+          "name": "Omkar",
+          "city": "Ranjangaon OP Aurangabad"
+        }
+    ]
+}
