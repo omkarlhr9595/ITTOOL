@@ -1,24 +1,22 @@
 {
-    "api":[
+    "tracks": {
+      "name": "ABC",
+      "items": [
         {
-            "name":"Dishant",
-            "city":"Power House Aurangabad"
-        },
-        {
+          "key": 1,
           "name": "Anurag",
-          "city": "Pundlik Nagar Aurangabad"
+          "age": "21",
         },
         {
+          "key": 2,
+          "name": "Dishant",
+          "age": "21",
+        },
+        {
+          "key": 3,
           "name": "Omkar",
-          "city": "Ranjangaon OP Aurangabad"
+          "age": "21",
         },
-        {
-          "name": "DAO",
-          "city": "Aurangabad"
-        },
-        {
-          "name": "DAO 2",
-          "city": "Aurangabad"
-        }
-    ]
-}
+      ],
+    }
+ }
